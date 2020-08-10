@@ -6,11 +6,11 @@ class OwnersController < ApplicationController
   end
 
   get '/owners/new' do 
+    @pets = Pet.all
     erb :'/owners/new'
   end
 
   post '/owners' do 
-    
   end
 
   get '/owners/:id/edit' do 
